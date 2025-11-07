@@ -43,7 +43,7 @@
 % ----------------------------------------------------------------------------
 \defbeamertemplate*{title page}{ua theme}
 {
-  \vspace{-3cm}
+  \vspace{-4cm}
 \vfill%
   \raggedleft\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par%
   \ifx\insertsubtitle\@empty%
@@ -75,7 +75,7 @@
 
 \defbeamertemplate*{alternative title}{ua theme}
 {
-  \vspace{-2.5cm}
+  \vspace{-4cm}
 \vfill%
   \raggedleft\usebeamerfont{title}\usebeamercolor[fg]{title} \centering Thank you for your attention!\par%
   \ifx\insertsubtitle\@empty%
@@ -83,6 +83,7 @@
     \vskip.1ex%
     {\raggedleft\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\centering Any questions? \par}%
   \fi%
+   \vspace{-0.5cm}
   \ifx\insertauthor\@empty%
   \else%
     \vskip1cm%
@@ -99,11 +100,9 @@
     {\raggedright\usebeamerfont{date}\usebeamercolor[fg]{date}\insertdate\par}%
   \fi%
 
-
- 
  \ifx\insertemail\@empty%
   \else%
-  \vskip 1.3ex%
+  \vskip .3ex%
   {\raggedright\usebeamerfont{institute}\usebeamercolor[fg]{institute}\insertemail\par}%
 \fi%
   \vfill%
