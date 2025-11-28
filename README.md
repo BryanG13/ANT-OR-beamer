@@ -42,11 +42,10 @@ See `ENM-beamer.tex` for a complete working example.
 │   ├── beamerinnerthemeENM.sty       # Inner theme elements
 │   └── beamerouterthemeENM.sty       # Outer theme elements
 ├── art/                               # Graphics and logos
-│   ├── antor-logo.pdf
-│   ├── antor-logo-text.pdf
-│   ├── antor-logo-white.pdf
-│   ├── antorBackgroundLightBlue.pdf
-│   ├── antorBackgroundDarkBlue.pdf
+│   ├── enm-logo.pdf
+│   ├── enm-logo-text-white.pdf
+│   ├── enm-logo-white.pdf
+│   ├── enmBackground.pdf
 │   └── ...
 ├── pictures/                          # Your presentation images
 └── ENM-beamer.tex                     # Example presentation
