@@ -57,3 +57,5 @@ __pycache__/
 
 # Backup files
 *.bak
+
+.DS_Store
