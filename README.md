@@ -6,24 +6,6 @@ A LaTeX Beamer presentation template for the **Department of Engineering Managem
 
 This is a custom Beamer theme designed for presentations by the Department of Engineering Management (ENM) at the University of Antwerp. The theme provides a professional and consistent look with ENM/University of Antwerp branding, including custom colors, logos, and layouts.
 
-## Original Author
-
-The original Beamer theme was created by **Nico Schlömer**. The logo design is by **Kenneth Sörensen (KS)**, as documented in `art/antor-logo-info.pdf`. This version has been adapted for the ENM department.
-
-## Features
-
-- **Custom ENM branding:**
-  - ENM/University of Antwerp logos
-  - Custom color scheme matching ENM branding
-  - University of Antwerp wave graphics
-  - Dark blue background for title slides
-
-- **Professional layout:**
-  - Clean and modern design
-  - 16:9 aspect ratio support
-  - Title and contact slides with logos
-  - Customizable navigation symbols
-
 ## Installation
 
 1. Clone or download this repository
@@ -49,55 +31,6 @@ To use this theme in your presentation:
 
 See `ENM-beamer.tex` for a complete working example.
 
-## Usage
-
-### Basic Example
-
-```latex
-\documentclass[aspectratio=169]{beamer}
-\usepackage{graphicx}
-
-% Configure paths so LaTeX finds theme files in ./theme folder
-\makeatletter
-\def\input@path{{theme/}}
-\makeatother
-
-\setbeamertemplate{navigation symbols}{}
-
-\usetheme{ENM}
-
-\title{Your Presentation Title}
-\subtitle{Your Subtitle}
-\author{Your Name}
-\institute{Department of Engineering Management (ENM), University of Antwerp}
-\email{your.email@uantwerpen.be}
-\date{\today}
-
-\begin{document}
-
-% Title slide
-\begin{frame}
-    \titlepage
-\end{frame}
-
-% Your content slides here
-
-% Contact slide
-\begin{frame}
-    \titlewithemail
-\end{frame}
-
-\end{document}
-```
-
-### Additional Customization
-
-You can customize various aspects:
-
-- Remove navigation symbols: `\setbeamertemplate{navigation symbols}{}`
-- Add custom email for contact slide: `\email{your.email@uantwerpen.be}`
-- Adjust aspect ratio: `\documentclass[aspectratio=169]{beamer}` (default 16:9)
-
 ## File Structure
 
 ```
@@ -119,40 +52,3 @@ You can customize various aspects:
 └── ENM-beamer.tex                     # Example presentation
 ```
 
-## Example
-
-See `ENM-beamer.tex` for a complete working example with various slide types and formatting options.
-
-## Compiling
-
-Compile your presentation using pdfLaTeX or XeLaTeX:
-
-```bash
-pdflatex ENM-beamer.tex
-```
-
-Or use latexmk for automatic compilation:
-
-```bash
-latexmk -pdf ENM-beamer.tex
-```
-
-## License
-
-Original theme: Copyright 2009 by Nico Schlömer
-
-This file may be distributed and/or modified under:
-1. The LaTeX Project Public License and/or
-2. The GNU Public License
-
-## Credits
-
-- **Original Theme Author:** Nico Schlömer
-- **Logo Design:** Kenneth Sörensen (KS) - See `art/antor-logo-info.pdf` for details
-- **Modified for:** Department of Engineering Management (ENM), University of Antwerp
-
-## Contact
-
-Department of Engineering Management (ENM)  
-University of Antwerp  
-https://www.uantwerpen.be/en/faculties/business-economics/research/research-groups/antor/
